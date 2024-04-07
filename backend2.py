@@ -24,7 +24,7 @@ class Chatbot:
 
 if __name__ == "__main__":
 
-    api_key = "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"
+    api_key = "Your ApIKEY"
 
     chatbot = Chatbot(api_key)
     response = chatbot.get_response("Write a joke about men")

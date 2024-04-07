@@ -6,7 +6,7 @@ import threading
 class ChatbotWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.chatbot = Chatbot("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")
+        self.chatbot = Chatbot("YOURAPI")
 
         self.setMinimumSize(700, 500)
 

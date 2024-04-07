@@ -18,12 +18,12 @@ class Chatbot:
             return response
         except openai.error.RateLimitError as e:
             print(f"Rate limit exceeded. Waiting for reset: {e}")
-            time.sleep(60)  # You might adjust the sleep time based on the OpenAI reset period
+            time.sleep(60)
             return self.get_response(user_input)
 
 
 if __name__ == "__main__":
-    # Replace 'YOUR-API-KEY' with your actual OpenAI API key
+
     api_key = "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"
 
     chatbot = Chatbot(api_key)
